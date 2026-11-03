@@ -1,0 +1,36 @@
+{
+  "attempt_id": "straight",
+  "asset_id": "front-v1",
+  "product_id": "TSHIRT-001",
+  "person_anchors": [
+    [
+      130.0,
+      160.0
+    ],
+    [
+      270.0,
+      160.0
+    ]
+  ],
+  "garment_anchors": [
+    [
+      50.0,
+      30.0
+    ],
+    [
+      150.0,
+      30.0
+    ]
+  ],
+  "width": 400,
+  "height": 600,
+  "transform": {
+    "a": 1.4,
+    "b": 0.0,
+    "tx": 60.0,
+    "ty": 118.0
+  },
+  "notice": "Визуальный эскиз. Размер, посадка и свойства ткани не определяются.",
+  "preview": "preview.png",
+  "status": "success"
+}

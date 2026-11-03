@@ -1,0 +1,27 @@
+{
+  "attempt_id": "invalid",
+  "product_id": "TSHIRT-001",
+  "asset_id": "front-v1",
+  "person": "person.png",
+  "garment": "shirt.png",
+  "person_anchors": [
+    [
+      130,
+      160
+    ],
+    [
+      130,
+      160
+    ]
+  ],
+  "garment_anchors": [
+    [
+      50,
+      30
+    ],
+    [
+      150,
+      30
+    ]
+  ]
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "command": "python make_examples.py",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "command": "python fitting.py examples/straight.json results/straight",
+    "returncode": 0,
+    "stdout": "{\"attempt_id\": \"straight\", \"asset_id\": \"front-v1\", \"product_id\": \"TSHIRT-001\", \"person_anchors\": [[130.0, 160.0], [270.0, 160.0]], \"garment_anchors\": [[50.0, 30.0], [150.0, 30.0]], \"width\": 400, \"height\": 600, \"transform\": {\"a\": 1.4, \"b\": 0.0, \"tx\": 60.0, \"ty\": 118.0}, \"notice\": \"Визуальный эскиз. Размер, посадка и свойства ткани не определяются.\", \"preview\": \"preview.png\", \"status\": \"success\"}\n",
+    "stderr": ""
+  },
+  {
+    "command": "python fitting.py examples/tilted.json results/tilted",
+    "returncode": 0,
+    "stdout": "{\"attempt_id\": \"tilted\", \"asset_id\": \"front-v1\", \"product_id\": \"TSHIRT-001\", \"person_anchors\": [[120.0, 175.0], [275.0, 145.0]], \"garment_anchors\": [[50.0, 30.0], [150.0, 30.0]], \"width\": 400, \"height\": 600, \"transform\": {\"a\": 1.55, \"b\": -0.3, \"tx\": 33.5, \"ty\": 143.5}, \"notice\": \"Визуальный эскиз. Размер, посадка и свойства ткани не определяются.\", \"preview\": \"preview.png\", \"status\": \"success\"}\n",
+    "stderr": ""
+  },
+  {
+    "command": "python -m tests.test_fitting",
+    "returncode": 0,
+    "stdout": "PASS test_identity\nPASS test_known_transform\nPASS test_tilt_anchor_mapping\nPASS test_coincident\nPASS test_bounds\nPASS test_nonfinite\nPASS test_scale_limit\nPASS test_alpha_pixels\nPASS test_bad_images\nPASS test_pixel_limit\nPASS test_end_to_end\nPASS test_invalid_no_output\nRESULT: 12/12 passed\n",
+    "stderr": ""
+  },
+  {
+    "command": "python fitting.py examples/invalid.json results/invalid",
+    "returncode": 2,
+    "stdout": "",
+    "stderr": "ERROR: SPAN: точки слева направо, расстояние не менее 2 px\n"
+  }
+]

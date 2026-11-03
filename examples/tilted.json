@@ -1,0 +1,27 @@
+{
+  "attempt_id": "tilted",
+  "product_id": "TSHIRT-001",
+  "asset_id": "front-v1",
+  "person": "person.png",
+  "garment": "shirt.png",
+  "person_anchors": [
+    [
+      120,
+      175
+    ],
+    [
+      275,
+      145
+    ]
+  ],
+  "garment_anchors": [
+    [
+      50,
+      30
+    ],
+    [
+      150,
+      30
+    ]
+  ]
+}
